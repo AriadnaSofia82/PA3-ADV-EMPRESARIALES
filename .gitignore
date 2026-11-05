@@ -1,0 +1,18 @@
+# Maven
+**/target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Archivos locales y credenciales
+.env
+.env.*
+!.env.example
+
+# Configuraciones locales
+application-local.properties
+application-local.yml

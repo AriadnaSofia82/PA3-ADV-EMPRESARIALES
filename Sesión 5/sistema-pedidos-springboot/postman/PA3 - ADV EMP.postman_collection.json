@@ -1,0 +1,740 @@
+{
+  "info": {
+    "_postman_id": "b66f958c-b2b9-4aa4-947f-c8fdd22e8b14",
+    "name": "PA3 - ADV EMP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54412828",
+    "_collection_link": "https://go.postman.co/collection/54412828-b66f958c-b2b9-4aa4-947f-c8fdd22e8b14?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Busqueda Avanzada",
+      "item": [
+        {
+          "name": "Registrar pedido de Ana – S/ 240",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "cliente",
+                  "value": "Ana"
+                },
+                {
+                  "key": "productoCodigo",
+                  "value": "TEC-001"
+                },
+                {
+                  "key": "cantidad",
+                  "value": "2"
+                },
+                {
+                  "key": "_csrf",
+                  "value": "GUBiGkqpUM-KCQVDu7EGQFpDZ1DsvINRSDgEwFzI9ycK3e5kLXNSeXKcY_inOTF7g5wyITwlSmmO3rt8flli-T76wxY9640H"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar pedido de Frank (S/ 120)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "cliente",
+                  "value": "Frank"
+                },
+                {
+                  "key": "productoCodigo",
+                  "value": "TEC-001"
+                },
+                {
+                  "key": "cantidad",
+                  "value": "1"
+                },
+                {
+                  "key": "_csrf",
+                  "value": "GUBiGkqpUM-KCQVDu7EGQFpDZ1DsvINRSDgEwFzI9ycK3e5kLXNSeXKcY_inOTF7g5wyITwlSmmO3rt8flli-T76wxY9640H"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar pedido de Luis (S/ 850)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "cliente",
+                  "value": "Luis"
+                },
+                {
+                  "key": "productoCodigo",
+                  "value": "MON-001"
+                },
+                {
+                  "key": "cantidad",
+                  "value": "1"
+                },
+                {
+                  "key": "_csrf",
+                  "value": "GUBiGkqpUM-KCQVDu7EGQFpDZ1DsvINRSDgEwFzI9ycK3e5kLXNSeXKcY_inOTF7g5wyITwlSmmO3rt8flli-T76wxY9640H"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pedidos de Ana con total mínimo de S/ 200.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/busqueda-avanzada?cliente=Ana&totalMinimo=200",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "busqueda-avanzada"
+              ],
+              "query": [
+                {
+                  "key": "cliente",
+                  "value": "Ana"
+                },
+                {
+                  "key": "totalMinimo",
+                  "value": "200"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pedidos de Frank con total mínimo de S/ 140.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/busqueda-avanzada?cliente=Frank&totalMinimo=140",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "busqueda-avanzada"
+              ],
+              "query": [
+                {
+                  "key": "cliente",
+                  "value": "Frank"
+                },
+                {
+                  "key": "totalMinimo",
+                  "value": "140"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Consulta Clientes Frecuentes",
+      "item": [
+        {
+          "name": "Clientes frecuentes luego de añadir 3 pedidos más",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/clientes-frecuentes?minPedidos=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "clientes-frecuentes"
+              ],
+              "query": [
+                {
+                  "key": "minPedidos",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pedidos",
+      "item": [
+        {
+          "name": "Registrar pedido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "cliente",
+                  "value": "Edward"
+                },
+                {
+                  "key": "productoCodigo",
+                  "value": "TEC-001"
+                },
+                {
+                  "key": "cantidad",
+                  "value": "2"
+                },
+                {
+                  "key": "_csrf",
+                  "value": "GUBiGkqpUM-KCQVDu7EGQFpDZ1DsvINRSDgEwFzI9ycK3e5kLXNSeXKcY_inOTF7g5wyITwlSmmO3rt8flli-T76wxY9640H"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/pedidos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "pedidos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "reporte-pedidos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/reportes/pedidos?",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "reportes",
+                "pedidos"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reportes JDBC",
+      "item": [
+        {
+          "name": "Búsqueda Avanzada",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/busqueda-avanzada?cliente=Ana&totalMinimo=100",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "busqueda-avanzada"
+              ],
+              "query": [
+                {
+                  "key": "cliente",
+                  "value": "Ana"
+                },
+                {
+                  "key": "totalMinimo",
+                  "value": "100"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Clientes Frecuentes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/clientes-frecuentes?minPedidos=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "clientes-frecuentes"
+              ],
+              "query": [
+                {
+                  "key": "minPedidos",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Seguridad",
+      "item": [
+        {
+          "name": "Enviar Credenciales",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "username",
+                  "value": "operador"
+                },
+                {
+                  "key": "password",
+                  "value": "OperadorDemo2026!"
+                },
+                {
+                  "key": "_csrf",
+                  "value": "2V653Ao61_wN0mmcnvai_p2TuajtSxa34-3fkbyUcNLzfO5s6GyP6z5e4Z0g5Vn5ptuWx6WhlMqLfnSa1Nm98t2sFLbEGdoO"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Validación: cliente vacío",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/busqueda-avanzada?cliente=&totalMinimo=100",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "busqueda-avanzada"
+              ],
+              "query": [
+                {
+                  "key": "cliente",
+                  "value": ""
+                },
+                {
+                  "key": "totalMinimo",
+                  "value": "100"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Validación: mínimo de pedidos igual a cero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/clientes-frecuentes?minPedidos=0",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "clientes-frecuentes"
+              ],
+              "query": [
+                {
+                  "key": "minPedidos",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Validación: importe negativo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/busqueda-avanzada?cliente=Ana&totalMinimo=-10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "api",
+                "v1",
+                "pedidos",
+                "busqueda-avanzada"
+              ],
+              "query": [
+                {
+                  "key": "cliente",
+                  "value": "Ana"
+                },
+                {
+                  "key": "totalMinimo",
+                  "value": "-10"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Inicio de sesión",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/sistema-pedidos/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "sistema-pedidos",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Busqueda-avanzada-clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/busqueda-avanzada?cliente=Edward&totalMinimo=200",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "sistema-pedidos",
+            "api",
+            "v1",
+            "pedidos",
+            "busqueda-avanzada"
+          ],
+          "query": [
+            {
+              "key": "cliente",
+              "value": "Edward"
+            },
+            {
+              "key": "totalMinimo",
+              "value": "200"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Acceso anónimo a reportes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/clientes-frecuentes?minPedidos=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "sistema-pedidos",
+            "api",
+            "v1",
+            "pedidos",
+            "clientes-frecuentes"
+          ],
+          "query": [
+            {
+              "key": "minPedidos",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Enviar Credenciales Consulta",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "username",
+              "value": "operador"
+            },
+            {
+              "key": "password",
+              "value": "OperadorDemo2026!"
+            },
+            {
+              "key": "_csrf",
+              "value": "DQn2XE289xxz4TKP3Lsg4NRqFqwEvfBMezUU4Xkhzn_NBrNGODrPOn-NkXpehwC35ZYU0u0MO80xipJhQlcm0E8W-E76YtFw"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8081/sistema-pedidos/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "sistema-pedidos",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clientes Frecuentes Consulta",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/sistema-pedidos/api/v1/pedidos/clientes-frecuentes?minPedidos=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "sistema-pedidos",
+            "api",
+            "v1",
+            "pedidos",
+            "clientes-frecuentes"
+          ],
+          "query": [
+            {
+              "key": "minPedidos",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Registrar pedido Consulta",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "",
+            "value": "",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "cliente",
+              "value": "PruebaConsulta"
+            },
+            {
+              "key": "productoCodigo",
+              "value": "TEC-001"
+            },
+            {
+              "key": "cantidad",
+              "value": "2"
+            },
+            {
+              "key": "_csrf",
+              "value": "DQn2XE289xxz4TKP3Lsg4NRqFqwEvfBMezUU4Xkhzn_NBrNGODrPOn-NkXpehwC35ZYU0u0MO80xipJhQlcm0E8W-E76YtFw"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8081/sistema-pedidos/pedidos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "sistema-pedidos",
+            "pedidos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
